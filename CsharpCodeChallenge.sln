@@ -5,11 +5,26 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BCA573BD-ECB1-47C7-9411-D35F29C94029}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{032AEA56-E575-47A7-9455-C19FC06DB9BA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{032AEA56-E575-47A7-9455-C19FC06DB9BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge", "src\CodeChallenge\CodeChallenge.csproj", "{E6689075-F7F2-48FE-A48D-5CDF26789F4E}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6689075-F7F2-48FE-A48D-5CDF26789F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6689075-F7F2-48FE-A48D-5CDF26789F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6689075-F7F2-48FE-A48D-5CDF26789F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6689075-F7F2-48FE-A48D-5CDF26789F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6689075-F7F2-48FE-A48D-5CDF26789F4E} = {BCA573BD-ECB1-47C7-9411-D35F29C94029}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {233BE065-5926-4FB4-ADF8-6E9004C7CDEB}
