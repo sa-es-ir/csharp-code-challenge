@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenge", "src\CodeCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge.Test", "test\CodeChallenge.Test\CodeChallenge.Test.csproj", "{E8D0A11D-FDA2-4B31-BFDC-A480A4502633}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{E6F5567B-757B-4611-BECB-2D6D9A763260}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{E6F5567B-757B-4611-BECB-2D6D9A763260}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
