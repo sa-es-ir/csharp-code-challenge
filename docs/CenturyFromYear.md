@@ -9,11 +9,11 @@ solution(year) = 17.
 
 - [input] integer year
 
-A positive integer, designating the year.
+  - A positive integer, designating the year.
 
 - Guaranteed constraints:
-1 ≤ year ≤ 2005.
+  - 1 ≤ year ≤ 2005.
 
 - [output] integer
 
-The number of the century the year is in.
+  - The number of the century the year is in.
