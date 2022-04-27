@@ -38,4 +38,19 @@ public class AdjacentElementsChallengeTests
             .WithParameterName(nameof(inputArray))
             .WithMessage($"invalid array length (Parameter '{nameof(inputArray)}')");
     }
+
+    [Fact]
+    public void AdjacentElement_InvalidArrayItem_ReturnException()
+    {
+        //arrange
+        var challenge = new AdjacentElementsChallenge();
+        var inputArray = new[] { 1, 2, -1100 };
+
+        //act
+        Action result = () => challenge.Do(inputArray);
+
+        //assert
+        result.Should().Throw<Exception>()
+            .WithMessage("invalid array item");
+    }
 }
