@@ -5,3 +5,4 @@ A set of code challenge in c-sharp
 - [Add](docs/Add.md)
 - [Century From Year](docs/CenturyFromYear.md)
 - [Check Palindrome](docs/CheckPalindrome.md)
+- [Adjacent Elements](docs/AdjacentElements.md)
