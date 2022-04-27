@@ -3,4 +3,5 @@ A set of code challenge in c-sharp
 ## Challenges
 
 - [Add](docs/Add.md)
-- [CenturyFromYear](docs/CenturyFromYear.md)
+- [Century From Year](docs/CenturyFromYear.md)
+- [Check Palindrome](docs/CheckPalindrome.md)
