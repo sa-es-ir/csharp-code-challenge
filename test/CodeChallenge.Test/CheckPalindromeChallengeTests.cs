@@ -5,7 +5,7 @@ using Xunit;
 
 namespace CodeChallenge.Test;
 
-public class CheckPalindromeTests
+public class CheckPalindromeChallengeTests
 {
 
     [Theory]
