@@ -16,7 +16,7 @@ public class CheckPalindromeChallengeTests
     public void CheckPalindrome_ValidInput_ReturnResult(string input, bool expected)
     {
         //arrange
-        var challenge = new CheckPalindrome();
+        var challenge = new CheckPalindromeChallenge();
 
         //act
         var result = challenge.Do(input);
@@ -29,7 +29,7 @@ public class CheckPalindromeChallengeTests
     public void CheckPalindrome_InvalidEmptyInput_ReturnException()
     {
         //arrange
-        var challenge = new CheckPalindrome();
+        var challenge = new CheckPalindromeChallenge();
         var input = string.Empty;
 
         //act
@@ -43,7 +43,7 @@ public class CheckPalindromeChallengeTests
     public void CheckPalindrome_InvalidLowerCaseInput_ReturnException()
     {
         //arrange
-        var challenge = new CheckPalindrome();
+        var challenge = new CheckPalindromeChallenge();
         var input = "AvbRd";
 
         //act

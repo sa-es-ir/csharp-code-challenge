@@ -1,6 +1,6 @@
 ﻿namespace CodeChallenge.Challenges;
 
-public class CheckPalindrome
+public class CheckPalindromeChallenge
 {
     public bool Do(string inputString)
     {
