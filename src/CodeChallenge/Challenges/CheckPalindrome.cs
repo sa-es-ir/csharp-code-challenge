@@ -13,14 +13,6 @@ public class CheckPalindrome
         if (inputString.Length is < 1 or > 100_000)
             throw new ArgumentException("input length is not valid");
 
-        if (inputString.Length is 1)
-            return true;
-
-        var halfOne = inputString[..(inputString.Length / 2)];
-
-        var temp = new string(inputString.Reverse().ToArray());
-        var halfTwo = temp[..(temp.Length / 2)];
-
-        return halfOne == halfTwo;
+        return inputString.SequenceEqual(inputString.Reverse());
     }
 }
