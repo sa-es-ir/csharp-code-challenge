@@ -4,6 +4,9 @@ public class ShapeAreaChallenge
 {
     public int Do(int n)
     {
+        if (n is < 1 or > 10000)
+            throw new Exception($"int should be between 1 to 10000 but current is {n}");
+
         if (n == 1)
             return 1;
 
