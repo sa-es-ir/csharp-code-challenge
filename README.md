@@ -1,5 +1,5 @@
 # csharp-code-challenge
-A set of code challenge in c-sharp
+A set of code challenges in c-sharp
 ## Challenges
 | Description | Test file | Code | 
 |---|---|---| 
