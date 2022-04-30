@@ -34,6 +34,6 @@ public class ShapeAreaChallengeTests
 
         //assert
         result.Should().Throw<Exception>()
-            .WithMessage($"int should be between 1 to 10000 but current is {input}");
+            .WithMessage($"input should be between 1 to 10000 but current is {input}");
     }
 }
