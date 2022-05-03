@@ -5,10 +5,10 @@ public class MakeArrayConsecutive2Challenge
     public int Do(int[] statues)
     {
         if (statues.Length is < 1 or > 10)
-            throw new ArgumentException("statues length is not valid");
+            throw new ArgumentException("input array length is not valid");
 
         if (statues.Any(x => x is < 0 or > 20))
-            throw new ArgumentException("statues item is not valid");
+            throw new ArgumentException("input array item is not valid");
 
         if (statues.Length == 1)
             return 0;

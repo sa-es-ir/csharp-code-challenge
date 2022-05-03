@@ -1,4 +1,5 @@
-﻿using CodeChallenge.Challenges;
+﻿using System;
+using CodeChallenge.Challenges;
 using FluentAssertions;
 using Xunit;
 
@@ -10,7 +11,7 @@ public class MakeArrayConsecutive2ChallengeTests
     [InlineData(new[] { 6, 2, 3, 8 }, 3)]
     [InlineData(new[] { 5, 2, 3, 1 }, 1)]
     [InlineData(new[] { 5, 2, 3, 10 }, 5)]
-    public void MakeArrayConsecutive_InvalidInput_ReturnsResult(int[] items, int expected)
+    public void MakeArrayConsecutive_ValidInput_ReturnsResult(int[] items, int expected)
     {
         //arrange
         var challenge = new MakeArrayConsecutive2Challenge();
@@ -20,5 +21,18 @@ public class MakeArrayConsecutive2ChallengeTests
 
         //asset
         result.Should().Be(expected);
+    }
+
+    [Fact]
+    public void MakeArrayConsecutive_ValidInput_ReturnsArgumentException()
+    {
+        //arrange
+        var challenge = new MakeArrayConsecutive2Challenge();
+
+        //act
+        Action result = () => challenge.Do(Array.Empty<int>());
+
+        //asset
+        result.Should().Throw<ArgumentException>().WithMessage("input array length is not valid");
     }
 }
