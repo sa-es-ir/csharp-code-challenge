@@ -24,7 +24,7 @@ public class MakeArrayConsecutive2ChallengeTests
     }
 
     [Fact]
-    public void MakeArrayConsecutive_ValidInput_ReturnsArgumentException()
+    public void MakeArrayConsecutive_InValidInputLength_ReturnsArgumentException()
     {
         //arrange
         var challenge = new MakeArrayConsecutive2Challenge();
@@ -34,5 +34,18 @@ public class MakeArrayConsecutive2ChallengeTests
 
         //asset
         result.Should().Throw<ArgumentException>().WithMessage("input array length is not valid");
+    }
+
+    [Fact]
+    public void MakeArrayConsecutive_InValidInputItem_ReturnsArgumentException()
+    {
+        //arrange
+        var challenge = new MakeArrayConsecutive2Challenge();
+        var input = new[] { -1, 10, 10, 9 };
+        //act
+        Action result = () => challenge.Do(input);
+
+        //asset
+        result.Should().Throw<ArgumentException>().WithMessage("input array item is not valid");
     }
 }
