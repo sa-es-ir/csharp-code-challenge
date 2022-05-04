@@ -9,3 +9,5 @@ A set of code challenges in c-sharp
 | [Adjacent Elements](docs/AdjacentElements.md)| [Test](test/CodeChallenge.Test/AdjacentElementsChallengeTests.cs)| [Code](src/CodeChallenge/Challenges/AdjacentElementsChallenge.cs) |
 | [Shape Area](docs/ShapeArea.md)| [Test](test/CodeChallenge.Test/ShapeAreaChallengeTests.cs)| [Code](src/CodeChallenge/Challenges/ShapeAreaChallenge.cs) |
 
+| [Make Array Consecutive 2](docs/MakeArrayConsecutive2.md)| [Test](test/CodeChallenge.Test/MakeArrayConsecutive2ChallengeTests.cs)| [Code](src/CodeChallenge/Challenges/MakeArrayConsecutive2Challenge.cs) |
+
