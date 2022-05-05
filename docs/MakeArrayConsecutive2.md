@@ -3,10 +3,10 @@ Since he likes to make things perfect, he wants to arrange them from smallest to
 
 **Example**
 
-For statues = ``[6, 2, 3, 8]``, the output should be
+For ``statues = [6, 2, 3, 8]``, the output should be
 solution(statues) = ``3``.
 
-Ratiorg needs statues of sizes 4, 5 and 7.
+Ratiorg needs statues of sizes 4, 5 and 7. 
 
 **Input/Output**
 
