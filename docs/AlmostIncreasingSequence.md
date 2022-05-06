@@ -21,6 +21,6 @@ You can remove 3 from the array to get the strictly increasing sequence [1, 2]. 
   - 2 ≤ sequence.length ≤ 105,
   - -105 ≤ sequence[i] ≤ 105.
 
-[output] boolean
+**[output] boolean**
 
-Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return false.
+Return ``true`` if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return ``false``.
