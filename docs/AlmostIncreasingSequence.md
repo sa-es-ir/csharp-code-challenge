@@ -14,13 +14,12 @@ For ``sequence = [1, 3, 2]``, the output should be
 
 You can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
 
-Input/Output
+**Input/Output**
 
-[input] array.integer sequence
-
-Guaranteed constraints:
-2 ≤ sequence.length ≤ 105,
--105 ≤ sequence[i] ≤ 105.
+- [input] array.integer sequence
+- Guaranteed constraints:
+  - 2 ≤ sequence.length ≤ 105,
+  - -105 ≤ sequence[i] ≤ 105.
 
 [output] boolean
 
