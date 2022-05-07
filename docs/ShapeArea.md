@@ -11,8 +11,8 @@ Example
 For ``n = 2``, the output should be
 ``solution(n) = 5``;
 
-For n = 3, the output should be
-solution(n) = 13.
+For ``n = 3``, the output should be
+``solution(n) = 13``.
 
 Input/Output
 
