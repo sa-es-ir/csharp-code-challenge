@@ -8,8 +8,8 @@ You can see the **1-, 2-, 3- and 4-** interesting polygons in the picture below.
 
 Example
 
-For n = 2, the output should be
-solution(n) = 5;
+For ``n = 2``, the output should be
+``solution(n) = 5``;
 
 For n = 3, the output should be
 solution(n) = 13.
