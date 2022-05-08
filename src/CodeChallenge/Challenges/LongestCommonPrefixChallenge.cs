@@ -2,34 +2,21 @@
 
 public class LongestCommonPrefixChallenge
 {
-    public string Do(List<string> array)
+    public string Do(string[] array)
     {
         if (array == null) throw new ArgumentNullException(nameof(array));
 
-        array = array.OrderBy(_ => _).ToList();
-
-        int longestCount = 1;
-        string longestPrefix = string.Empty;
-        for (int i = 1; i <= array.Max(_ => _)?.Length; i++)
-        {
-            var grouped = array.Where(x => x.Length >= i)
-                .GroupBy(x => x[..i])
-                .Where(x => x.Count() > 1)
-                .OrderByDescending(x => x.Count())
-                .Select(x => new { LongestCommonPrefix = x.Key, LongestCommonPrefixCount = x.Count() })
-                .FirstOrDefault();
-
-            if (grouped == null)
-                break;
-
-            if (grouped.LongestCommonPrefix.Length > longestPrefix.Length)
+        return Enumerable.Range(1, array.Max(_ => _)!.Length)
+            .Select(i =>
             {
-                longestCount = grouped.LongestCommonPrefixCount;
-                longestPrefix = grouped.LongestCommonPrefix;
-            }
-        }
+                var grouped = array.Where(x => x.Length >= i)
+                    .GroupBy(x => x[..i])
+                    .Where(x => x.Count() > 1)
+                    .OrderByDescending(x => x.Count())
+                    .Select(x => new { LongestCommonPrefix = x.Key })
+                    .FirstOrDefault();
 
-        return longestPrefix;
-
+                return grouped?.LongestCommonPrefix ?? string.Empty;
+            }).Max()!;
     }
 }
