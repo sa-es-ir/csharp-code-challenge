@@ -6,4 +6,4 @@ Even though "a" is common for all 3, I would like to get "ab" because 2 elements
 ### Examples
 - input: ["a", "abC", "abcD"] => "ab"
 - input: ["a", "abC", "abcD", "abcz"] => "abc"
-- - input: ["a", "a4bC", "a1bcD", "a2bcz"] => "a"
+- input: ["a", "a4bC", "a1bcD", "a2bcz"] => "a"
