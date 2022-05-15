@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CodeChallenge.Challenges;
 using FluentAssertions;
 using Xunit;
@@ -21,5 +22,18 @@ public class LongestCommonPrefixChallengeTests
 
         //assert
         result.Should().Be(expected);
+    }
+
+    [Fact]
+    public void LongestCommonPrefix_NullInput_ReturnArgumentNullException()
+    {
+        //arrange
+        var challenge = new LongestCommonPrefixChallenge();
+
+        //act
+        Action result = () => challenge.Do(null!);
+
+        //assert
+        result.Should().Throw<ArgumentNullException>().WithParameterName("array");
     }
 }
